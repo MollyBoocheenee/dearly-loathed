@@ -12,7 +12,18 @@ html {
 nav {
   background-color: #F12A4E;
   display: flex;
+  display: none;
 }
+
+input {
+  visibility: hidden;
+}
+
+.nav-toggle:checked ~ nav {
+  display: block;
+}
+
+
 
 nav ul li a {
   color: #F5F9EB;
@@ -47,4 +58,13 @@ span {
   background-color: #F12A4E;
   color: #fff;
 
+}
+
+@media (min-width: 1000px) {
+  input {
+    display: none;
+  }
+  nav {
+    display: block;
+  }
 }
