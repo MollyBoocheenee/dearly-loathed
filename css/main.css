@@ -19,7 +19,15 @@ input {
   visibility: hidden;
 }
 
-.nav-toggle:checked ~ nav {
+input.nav-toggle {
+  display: none;
+}
+
+input.nav-toggle:checked ~ nav {
+  display: block;
+}
+
+label.nav-toggle-label {
   display: block;
 }
 
@@ -60,10 +68,14 @@ span {
 
 }
 
-@media (min-width: 1000px) {
-  input {
+@media (min-width: 700px) {
+  input.nav-toggle {
     display: none;
   }
+  label.nav-toggle-label {
+    display: none;
+  }
+
   nav {
     display: block;
   }
