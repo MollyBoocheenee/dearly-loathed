@@ -1,6 +1,7 @@
 html {
   box-sizing: border-box;
   font-family: "Raleway", sans-serif;
+  line-height: 1.5;
 }
 
 *, *::before, *::after {
@@ -8,7 +9,17 @@ html {
 }
 
 @import url('https://fonts.google.com/specimen/Raleway');
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons+Outlined');
 
+body {
+  max-width: 1000px;
+  margin: 0 auto;
+  align-self: center;
+}
+
+main {
+    margin: 1rem;
+}
 nav {
   background-color: #F12A4E;
   display: flex;
@@ -31,10 +42,9 @@ label.nav-toggle-label {
   display: block;
 }
 
-
-
 nav ul li a {
   color: #F5F9EB;
+  text-decoration: none;
 }
 
 nav ul li {
@@ -43,8 +53,19 @@ nav ul li {
   display: flex;
 }
 
+.hero-banner {
+  width: 100%;
+  background-color: #000;
+  opacity: 50%;
+  max-height: 200px;
+  background-image: url('img/hero.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
 img {
-  max-width: 100%;
+  width: 100%;
 }
 
 footer {
@@ -54,19 +75,63 @@ footer {
   padding: 3rem .5rem .5rem .5rem;
 }
 
-em {
+a {
+  color: #fff;
   text-decoration: none;
+}
+
+.link {
+  color: #000;
+}
+
+.review {
+  padding: 1rem 2rem 2.5rem;
 }
 
 article {
   background-color: #F5F9EB;
+  margin-bottom: 3rem;
 }
 
-span {
+#shop {
   background-color: #F12A4E;
   color: #fff;
-
+  padding: .5rem;
+  margin-top: 1rem;
 }
+
+header {
+background-color: #F12A4E;
+display: flex;
+}
+
+.return {
+  background-color: #F5F9EB;
+  padding: 1rem;
+  color: #000;
+}
+
+.icons {
+  display: flex;
+  max-width: 100px;
+  padding-bottom: 2em;
+}
+
+.add {
+  padding: 1em;
+  color: #fff;
+}
+
+#container {
+    max-height: 300px;
+    overflow: hidden;
+}
+
+article > img {
+    width: 100%;
+    object-fit: contain;
+}
+
 
 @media (min-width: 700px) {
   input.nav-toggle {
@@ -78,5 +143,21 @@ span {
 
   nav {
     display: block;
+  }
+
+  .reviewsflex {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .indexpicture {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns:
+    1fr 1fr;
   }
 }
