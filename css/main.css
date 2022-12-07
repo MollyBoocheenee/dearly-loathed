@@ -53,19 +53,16 @@ nav ul li {
   display: flex;
 }
 
-.hero-banner {
-  width: 100%;
-  background-color: #000;
-  opacity: 50%;
-  max-height: 200px;
-  background-image: url('img/hero.jpg');
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-}
 
 img {
   width: 100%;
+}
+
+header {
+background-color: #F12A4E;
+display: flex;
+justify-content: space-between;
+align-items: baseline;
 }
 
 footer {
@@ -80,6 +77,10 @@ a {
   text-decoration: none;
 }
 
+.logo {
+  max-width: 200px;
+}
+
 .link {
   color: #000;
 }
@@ -91,24 +92,33 @@ a {
 article {
   background-color: #F5F9EB;
   margin-bottom: 3rem;
+  margin: 1rem;
+  padding: 1rem;
 }
 
-#shop {
+.name {
+  font-weight: bold;
+  font-size-adjust: .6;
+}
+
+.price {
+  font-size-adjust: .6;
+}
+
+.desc
+
+span.shop {
   background-color: #F12A4E;
   color: #fff;
   padding: .5rem;
   margin-top: 1rem;
 }
 
-header {
-background-color: #F12A4E;
-display: flex;
-}
-
 .return {
   background-color: #F5F9EB;
   padding: 1rem;
   color: #000;
+  margin: 1rem;
 }
 
 .icons {
@@ -122,14 +132,16 @@ display: flex;
   color: #fff;
 }
 
-#container {
-    max-height: 300px;
+.container {
+    max-height: 200px;
     overflow: hidden;
+    display: flex;
 }
 
-article > img {
+article div img {
     width: 100%;
-    object-fit: contain;
+    object-fit: cover;
+    object-position: 0% 50%;
 }
 
 
@@ -160,4 +172,15 @@ article > img {
     grid-template-columns:
     1fr 1fr;
   }
+
+  ul {
+    display: flex;
+  }
+
+  .ourstory {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2rem;
+  }
+
 }
