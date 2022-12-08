@@ -45,6 +45,8 @@ label.nav-toggle-label {
 nav ul li a {
   color: #F5F9EB;
   text-decoration: none;
+  margin-right: 2rem;
+  margin-left: 4rem;
 }
 
 nav ul li {
@@ -52,7 +54,6 @@ nav ul li {
   text-decoration: none;
   display: flex;
 }
-
 
 img {
   width: 100%;
@@ -72,17 +73,36 @@ footer {
   padding: 3rem .5rem .5rem .5rem;
 }
 
-a {
+article a {
   color: #fff;
   text-decoration: none;
+  background-color: #F12A4E;
+  padding: .5rem;
+  border-radius: .2rem;
+}
+
+.addcart {
+  color: #fff;
+  text-decoration: none;
+  background-color: #F12A4E;
+  padding: .5rem;
+  border-radius: .2rem;
 }
 
 .logo {
   max-width: 200px;
+  margin-right: 1rem;
+}
+
+.hero {
+  filter:brightness(50%);
+  margin: 0;
+  padding: 0;
 }
 
 .link {
   color: #000;
+  text-decoration: none;
 }
 
 .review {
@@ -107,7 +127,7 @@ article {
 
 .desc
 
-span.shop {
+.shop {
   background-color: #F12A4E;
   color: #fff;
   padding: .5rem;
@@ -125,6 +145,8 @@ span.shop {
   display: flex;
   max-width: 100px;
   padding-bottom: 2em;
+  column-gap: 2rem;
+  max-width: 30%;
 }
 
 .add {
@@ -157,11 +179,6 @@ article div img {
     display: block;
   }
 
-  .reviewsflex {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
-
   .indexpicture {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -173,14 +190,32 @@ article div img {
     1fr 1fr;
   }
 
-  ul {
-    display: flex;
+  .maggotflex {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2rem;
   }
 
+  .liuno {
+    float: left;
+  }
+
+  header {
+    align-items: center;
+  }
+
+}
+
+
+@media (min-width: 1200px) {
   .ourstory {
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 2rem;
   }
 
+    .reviewsflex {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
 }
