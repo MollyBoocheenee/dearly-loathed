@@ -11,15 +11,9 @@ html {
 @import url('https://fonts.google.com/specimen/Raleway');
 @import url('https://fonts.googleapis.com/icon?family=Material+Icons+Outlined');
 
-body {
-  max-width: 1000px;
-  align-self: center;
-}
 
-main {
-    margin: 1rem;
-      margin: 0 auto;
-}
+
+
 nav {
   background-color: #F12A4E;
   display: flex;
@@ -59,6 +53,11 @@ img {
   width: 100%;
 }
 
+main {
+  margin: 0 auto;
+  max-width: 1000px;
+}
+
 header {
 background-color: #F12A4E;
 display: flex;
@@ -89,6 +88,11 @@ article a {
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
+  }
+
+  .margin {
+    max-width: 1000px;
+    margin: 0 auto;
   }
 
 .addcart {
