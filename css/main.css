@@ -90,11 +90,6 @@ article a {
     background-size: cover;
   }
 
-  .margin {
-    max-width: 1000px;
-    margin: 0 auto;
-  }
-
 .addcart {
   color: #fff;
   text-decoration: none;
@@ -132,8 +127,6 @@ article {
 .price {
   font-size-adjust: .6;
 }
-
-.desc
 
 .shop {
   background-color: #F12A4E;
