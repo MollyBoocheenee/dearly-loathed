@@ -13,12 +13,12 @@ html {
 
 body {
   max-width: 1000px;
-  margin: 0 auto;
   align-self: center;
 }
 
 main {
     margin: 1rem;
+      margin: 0 auto;
 }
 nav {
   background-color: #F12A4E;
@@ -81,6 +81,16 @@ article a {
   border-radius: .2rem;
 }
 
+.hero {
+    width: 100%;
+    background-color: #000;
+    height: 80vh;
+    background-image: url(file:///Users/hrhmolly/Desktop/fireworks2.JPG);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+  }
+
 .addcart {
   color: #fff;
   text-decoration: none;
@@ -92,12 +102,6 @@ article a {
 .logo {
   max-width: 200px;
   margin-right: 1rem;
-}
-
-.hero {
-  filter:brightness(50%);
-  margin: 0;
-  padding: 0;
 }
 
 .link {
