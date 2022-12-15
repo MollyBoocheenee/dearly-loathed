@@ -6,11 +6,19 @@
   <meta name="viewport" content="wclassth=device-wclassth,initial-scale=1">
   <link href="https://fonts.googleapis.com/css2?family=Raleway" rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet"/>
+  <link rel="icon" type="image/ico" href="img/favicon.ico">
   <link rel="stylesheet" href="css/main.css">
+  <style type="text/css">
+body {
+    margin: 0;
+    padding: 0;
+}
+</style>
 </head>
 <body>
 
   <header role="banner">
+    <div class="ban">
     <input type="checkbox" id="nav-toggle" class="nav-toggle">
     <label for="nav-toggle" class="nav-toggle-label">
       <span class="material-icons-outlined"> menu </span>
@@ -18,21 +26,29 @@
 
     <nav>
       <ul>
-        <li class="liuno"><a href="index.html">Home</a></li>
+        <li><a href="index.html">Home</a></li>
         <li><a href="shop.html">Shop</a></li>
+        <li><a href="buy.html">Buy</a></li>
       </ul>
     </nav>
     <img src="svg/logo.svg" alt="Dearly loathed site logo" class="logo">
-  </header>
+  </div>
 
-
-
-  <main role="main">
     <div class="hero-banner">
-      <p class="herotxt">Giving never felt so good.</p>
+      <ul class="herotxt">
+        <li class="heroli">Giving</li>
+        <li class="heroli">never</li>
+        <li class="heroli">felt</li>
+        <li class="heroli">so</li>
+<li class="heroli">good.</li>
+      </ul>
 
     </div>
-    
+  </header>
+
+  <main role="main">
+
+
     <section class="ourstory">
       <div>
     <h1>Our Story</h1>
@@ -43,7 +59,7 @@
   </div>
   </section>
 
-    <h2> Featured products </h2>
+    <h2 class="hmargin"> Featured products </h2>
 
 <div class="indexpicture">
 
@@ -70,7 +86,7 @@
     </article>
 </div>
 
-    <div>
+    <div class="contentinfo">
 
       <h3>Contact Us</h3>
       <p>Have any suggestions of your own? We are always open to appallingly ghastly classeas from our readers. E-mail us at dearlyloathed@darkweb.ca or phone us at 613-673-2902.</p>

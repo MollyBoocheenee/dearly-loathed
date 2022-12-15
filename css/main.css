@@ -2,6 +2,7 @@ html {
   box-sizing: border-box;
   font-family: "Raleway", sans-serif;
   line-height: 1.5;
+
 }
 
 *, *::before, *::after {
@@ -12,7 +13,10 @@ html {
 @import url('https://fonts.googleapis.com/icon?family=Material+Icons+Outlined');
 
 
-
+.material-icons-outlined {
+  padding-top: 1rem;
+  padding-left: 1rem;
+}
 
 nav {
   background-color: #F12A4E;
@@ -46,7 +50,6 @@ nav ul li a {
 nav ul li {
   list-style-type: none;
   text-decoration: none;
-  display: flex;
 }
 
 img {
@@ -60,9 +63,18 @@ main {
 
 header {
 background-color: #F12A4E;
-display: flex;
-justify-content: space-between;
-align-items: baseline;
+}
+
+.heroli {
+  line-height: 1.5;
+  font-size: xxx-large;
+}
+
+.ban {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-direction: column;
 }
 
 footer {
@@ -84,10 +96,14 @@ article a {
     width: 100%;
     background-color: #000;
     height: 80vh;
-    background-image: url("../img/hero.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/hero.jpg");
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
+  }
+
+  li {
+    list-style-type: none;
   }
 
 .addcart {
@@ -100,7 +116,7 @@ article a {
 
 .logo {
   max-width: 200px;
-  margin-right: 1rem;
+  margin-left: 1rem;
 }
 
 .link {
@@ -110,6 +126,12 @@ article a {
 
 .review {
   padding: 1rem 2rem 2.5rem;
+}
+
+.herotxt {
+  color: #fff;
+  position: absolute;
+  font-size-adjust: 3vw;
 }
 
 article {
@@ -144,10 +166,9 @@ article {
 
 .icons {
   display: flex;
-  max-width: 100px;
+  width: 20%
   padding-bottom: 2em;
   column-gap: 2rem;
-  max-width: 30%;
 }
 
 .add {
@@ -159,6 +180,15 @@ article {
     max-height: 200px;
     overflow: hidden;
     display: flex;
+}
+
+.shoptitle, .siteshop, .contentinfo, .hmargin, .ourstory {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.ourstory {
+  padding-top: 1rem;
 }
 
 h1, h2, h3, h4, p, strong {
@@ -201,14 +231,23 @@ article div img {
     column-gap: 2rem;
   }
 
-  .liuno {
-    float: left;
-  }
-
   header {
     align-items: center;
   }
+  nav ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
 
+.ban {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.logo {
+  padding-right: 1rem;
+}
 }
 
 
