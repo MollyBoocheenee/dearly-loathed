@@ -253,7 +253,7 @@ nav ul li a:hover {
   outline: solid 1px #F5F9EB;
   transition: border-width 0.5s linear;
   border-radius: .2rem;
-  outline-offset: 10px;
+  outline-offset: 8px;
 }
 }
 
